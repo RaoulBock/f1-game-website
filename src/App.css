@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-outline {
+  background-color: #c4c4c4;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  animation: nav-show 0.2s linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes nav-show {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+.nav-not-active {
+  background-color: #151d26;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: sticky;
+  top: 0;
+}
+.nav-logo {
+  width: 200px;
+}
+.nav-menu h4 {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+.nav-menu h4:hover {
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.jumbotron-outline {
+  height: 800px;
+}
+.jumbotron-gif {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(34, 47, 62,0.6), rgba(53, 59, 72,0.6)), url('https://blog.hyland.com/wp-content/uploads/F1-Alfa-Romeo-3loops.gif');
+  background-attachment: fixed;
+}
+.jumbotron-information {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  color: white;
+}
+.jumbotron-information h2 {
+  font-size: 88px;
+  font-weight: 900;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.jumbotron-information h5 {
+  width: 500px;
+  font-weight: 500;
+  color: rgb(207, 207, 207);
+}
+.btn {
+  background: linear-gradient(to right, transparent, #f92b73 ) ;
+  padding: 15px 25px;
+  border: 0;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-image {
+  width: 200px;
+  padding-left: 20px;
+  animation: slide-in-out-banner 10s linear infinite;
+}
+@keyframes slide-in-out-banner {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.world-cup-section {
+  display: flex;
+  margin: 8px 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.thumbnail-image {
+  width: 100%;
+  border-radius: 10px;
+
+}
+.thumbnail-outline {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #404040;
+  margin: 0px 10px;
+  width: 420px;
+  border-radius: 10px;
+}
+.thumbnail-outline:hover {
+  transform: scale(1.01);
+  -webkit-box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
+}
+.thumbnail-outline h5 {
+  width: 400px;
+  color: gray;
+  font-weight: 400; 
+  padding: 4px 10px;
+}
+.thumbnail-outline h3 {
+  margin: 6px 0px;
+  font-weight: 900;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+.new-session {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.new-session-image {
+  width: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.new-session-image-new-era {
+  width: 50%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.new-session h2 {
+  font-size: 50px;
+  color: #404040;
+  width: 80%;
+  text-transform: uppercase;
+}
+.new-session-information {
+  padding: 0px 50px;
+}
+.new-session h4 {
+  width: 500px;
+  font-weight: 400;
+  color: gray;
 }

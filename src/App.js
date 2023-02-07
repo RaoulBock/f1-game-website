@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import AppProvider, { AppContext } from "./Context/AppContext";
+import { APP_PAGES } from "./Context/settings";
+import { HomeScreen } from "./Screens/HomeScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <NavWrapper />
+    </AppProvider>
   );
 }
+
+const NavWrapper = () => {
+  const { navPage, setNavPage } = React.useContext(AppContext);
+  const onSetNavPage = (e) => {
+    setNavPage(e);
+  };
+
+  React.useEffect(() => {
+    console.log("App Nav: ", navPage);
+  }, [navPage]);
+
+  return <>{navPage === APP_PAGES.APP.HOME && <HomeScreen />}</>;
+};
 
 export default App;
