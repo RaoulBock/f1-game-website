@@ -12,11 +12,25 @@ export const HomeScreen = () => {
       <Nav />
       <Jumbotron />
       {/* <Banner /> */}
-
+      <div className="fade-out"></div>
       <section className="world-cup-section">
         {THUMBNAIL_DATA.map((e, i) => {
           return <Thumbnail key={i} item={e} />;
         })}
+      </section>
+
+      <section className="new-session">
+        <img
+          src={
+            "https://pro2-bar-s3-cdn-cf6.myportfolio.com/c352d5812779c1f8fb7627dec91d7d2b/ae0655087ca23b12208d4e76_rw_1920.gif?h=ce6675ffd484895557eb80bb9df22436"
+          }
+          alt={"img"}
+          className={"new-session-image-new-era"}
+        />
+        <div className="new-session-information">
+          <h2>THE NEW ERA HAS ARRIVED.</h2>
+          <h4>Prepare to take your seat</h4>
+        </div>
       </section>
 
       <section className="new-session">
@@ -34,20 +48,6 @@ export const HomeScreen = () => {
           alt={"img"}
           className={"new-session-image"}
         />
-      </section>
-
-      <section className="new-session">
-        <img
-          src={
-            "https://c4.wallpaperflare.com/wallpaper/577/781/101/sebastian-vettel-ferrari-f1-formula-1-race-tracks-hd-wallpaper-thumb.jpg"
-          }
-          alt={"img"}
-          className={"new-session-image-new-era"}
-        />
-        <div className="new-session-information">
-          <h2>THE NEW ERA HAS ARRIVED.</h2>
-          <h4>Prepare to take your seat</h4>
-        </div>
       </section>
     </div>
   );

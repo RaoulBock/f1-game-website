@@ -5,22 +5,22 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 .nav-outline {
-  background-color: #c4c4c4;
+  background-color: #161d26;
   padding: 10px;
   display: flex;
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
-  -webkit-box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 28px -15px rgb(0 0 0 / 75%);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   transition: all 0.2s ease-in-out;
   animation: nav-show 0.2s linear;
   opacity: 0;
   animation-fill-mode: forwards;
+  color: white;
+  transition: all 0.2s ease-in-out;
 }
 @keyframes nav-show {
   from {
@@ -31,17 +31,20 @@
   }
 }
 .nav-not-active {
-  background-color: #151d26;
+  background-color: transparent;
   padding: 10px;
   display: flex;
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
-  position: sticky;
+  position: fixed;
   top: 0;
+  color: white;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
 }
 .nav-logo {
-  width: 200px;
+  width: 80px;
 }
 .nav-menu h4 {
   cursor: pointer;
@@ -78,7 +81,7 @@
   color: white;
 }
 .jumbotron-information h2 {
-  font-size: 88px;
+  font-size: 110px;
   font-weight: 900;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -113,20 +116,22 @@
 }
 @keyframes slide-in-out-banner {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-100%);overflow: hidden;
   }
   50% {
-    transform: translateX(100%);
+    transform: translateX(100%);overflow: hidden;
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%);overflow: hidden;
   }
 }
 .world-cup-section {
   display: flex;
-  margin: 8px 0px;
+  /* margin: 8px 0px; */
   flex-wrap: wrap;
-  justify-content: space-between;
+  z-index: 1;
+  justify-content: flex-start;
+  position: relative;
 }
 .thumbnail-image {
   width: 100%;
@@ -137,7 +142,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   background-color: #404040;
-  margin: 0px 10px;
+  margin: 5px 10px;
   width: 420px;
   border-radius: 10px;
 }
@@ -167,6 +172,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  z-index: 1;
+  position: relative;
 }
 .new-session-image {
   width: 50%;
@@ -191,4 +198,11 @@
   width: 500px;
   font-weight: 400;
   color: gray;
+}
+.fade-out {
+  background: linear-gradient(to bottom, #212029, white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
 }
