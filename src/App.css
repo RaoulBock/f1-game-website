@@ -64,7 +64,8 @@
   margin-left: 10px;
 }
 .jumbotron-outline {
-  height: 800px;
+  /* height: 800px; */
+  height: 100vh;
 }
 .jumbotron-gif {
   height: 100%;
@@ -72,6 +73,7 @@
   background-image: linear-gradient(rgba(34, 47, 62,0.6), rgba(53, 59, 72,0.6)), url('https://blog.hyland.com/wp-content/uploads/F1-Alfa-Romeo-3loops.gif');
   background-attachment: fixed;
 }
+
 .jumbotron-information {
   position: relative;
   bottom: 50%;
@@ -137,6 +139,7 @@
   justify-content: flex-start;
   position: relative;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .world-cup-section::-webkit-scrollbar {
   display: none;
@@ -152,7 +155,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   background-color: #404040;
-  margin: 5px 10px;
+  margin: 0px 10px;
   width: 409px;
   /* border-radius: 10px; */
   height: 500px;
@@ -292,7 +295,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #22212a;
+  background: #ed1500;
 }
 
 /* Handle on hover */

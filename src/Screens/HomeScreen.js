@@ -26,6 +26,9 @@ export const HomeScreen = () => {
         description={
           "Excepteur qui eiusmod quis ex consectetur exercitation irure. Sint deserunt eu qui anim Lorem minim nostrud. Amet cillum anim adipisicing culpa labore velit officia consequat. Laboris pariatur in velit veniam consequat laborum eiusmod nulla officia excepteur."
         }
+        src={
+          "https://blog.hyland.com/wp-content/uploads/F1-Alfa-Romeo-3loops.gif"
+        }
       />
 
       <div className="fade-out"></div>
@@ -63,10 +66,10 @@ export const HomeScreen = () => {
       </section>
 
       <Jumbotron
-        text={"2023-01-08"}
+        // text={"2023-01-08"}
         title={"Get game today"}
         description={
-          "Elit fugiat consequat pariatur velit amet culpa consectetur dolore. Elit est qui reprehenderit minim nisi ad laborum. Minim culpa exercitation eiusmod quis eu sit aute. Consequat irure culpa nostrud officia ut laboris elit proident elit cupidatat non eiusmod esse. Dolore labore id ex id cupidatat labore elit qui est ex. Dolor consequat consectetur et adipisicing exercitation reprehenderit labore magna sunt aliqua laborum mollit."
+          "Elit fugiat consequat pariatur velit amet culpa consectetur dolore. Dolor consequat consectetur et adipisicing exercitation reprehenderit labore magna sunt aliqua laborum mollit."
         }
       />
     </div>
