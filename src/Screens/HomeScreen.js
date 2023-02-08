@@ -2,6 +2,7 @@ import React from "react";
 import { Banner } from "../Components/Banner/Banner";
 import { Button } from "../Components/Button/Button";
 import { Footer } from "../Components/Footer";
+import { FullView } from "../Components/FullView";
 import { Jumbotron } from "../Components/Jumbotron";
 import { Nav } from "../Components/Nav";
 import { Thumbnail } from "../Components/Thumbnail";
@@ -17,32 +18,23 @@ export const HomeScreen = () => {
   return (
     <div>
       <Nav />
-      <Jumbotron />
-      {/* <Banner /> */}
+      <Jumbotron
+        text={
+          "FIFA 23 Ultimate Team™ welcomes the future of The World’s Game—this"
+        }
+        title={"F1 23 Ultimate Team"}
+        description={
+          "Excepteur qui eiusmod quis ex consectetur exercitation irure. Sint deserunt eu qui anim Lorem minim nostrud. Amet cillum anim adipisicing culpa labore velit officia consequat. Laboris pariatur in velit veniam consequat laborum eiusmod nulla officia excepteur."
+        }
+      />
+
       <div className="fade-out"></div>
-      <section className="updates-in-game">
-        <h1>NEW IN F1 </h1>
-        <div className="world-cup-section">
-          {THUMBNAIL_DATA.map((e, i) => {
-            return (
-              <div
-                className={`thumbnail-item ${
-                  i === currentIndex ? "active" : ""
-                }`}
-                key={i}
-                onClick={() => handleClick(i)}
-              >
-                <Thumbnail key={i} item={e} />
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      <Banner />
 
       <section className="new-session">
         <img
           src={
-            "https://blog.hyland.com/wp-content/uploads/F1-Alfa-Romeo-3loops.gif"
+            "https://f1i.com/wp-content/uploads/2022/12/audi-f1-scaled-e1672310900240.jpg"
           }
           alt={"img"}
           className={"new-session-image-new-era"}
@@ -52,7 +44,7 @@ export const HomeScreen = () => {
           <h4>Prepare to take your seat</h4>
         </div>
       </section>
-      {/* <div className="fade-out-top"></div> */}
+
       <section className="new-session">
         <div className="new-session-information">
           <h2>New Season, New Rules.</h2>
@@ -70,7 +62,13 @@ export const HomeScreen = () => {
         />
       </section>
 
-      <Footer />
+      <Jumbotron
+        text={"2023-01-08"}
+        title={"Get game today"}
+        description={
+          "Elit fugiat consequat pariatur velit amet culpa consectetur dolore. Elit est qui reprehenderit minim nisi ad laborum. Minim culpa exercitation eiusmod quis eu sit aute. Consequat irure culpa nostrud officia ut laboris elit proident elit cupidatat non eiusmod esse. Dolore labore id ex id cupidatat labore elit qui est ex. Dolor consequat consectetur et adipisicing exercitation reprehenderit labore magna sunt aliqua laborum mollit."
+        }
+      />
     </div>
   );
 };

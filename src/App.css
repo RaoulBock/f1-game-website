@@ -145,14 +145,16 @@
   width: 100%;
   border-radius: 10px;
   height: 300px;
+  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .thumbnail-outline {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   background-color: #404040;
   margin: 5px 10px;
-  width: 420px;
-  border-radius: 10px;
+  width: 409px;
+  /* border-radius: 10px; */
   height: 500px;
 }
 .thumbnail-outline:hover {
@@ -296,4 +298,7 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
+}
+.get-game-image-new-era {
+  width: 100%;
 }
