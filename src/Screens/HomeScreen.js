@@ -1,6 +1,7 @@
 import React from "react";
 import { Banner } from "../Components/Banner/Banner";
 import { Button } from "../Components/Button/Button";
+import { Footer } from "../Components/Footer";
 import { Jumbotron } from "../Components/Jumbotron";
 import { Nav } from "../Components/Nav";
 import { Thumbnail } from "../Components/Thumbnail";
@@ -22,7 +23,7 @@ export const HomeScreen = () => {
       <section className="new-session">
         <img
           src={
-            "https://pro2-bar-s3-cdn-cf6.myportfolio.com/c352d5812779c1f8fb7627dec91d7d2b/ae0655087ca23b12208d4e76_rw_1920.gif?h=ce6675ffd484895557eb80bb9df22436"
+            "https://blog.hyland.com/wp-content/uploads/F1-Alfa-Romeo-3loops.gif"
           }
           alt={"img"}
           className={"new-session-image-new-era"}
@@ -49,6 +50,8 @@ export const HomeScreen = () => {
           className={"new-session-image"}
         />
       </section>
+
+      <Footer />
     </div>
   );
 };

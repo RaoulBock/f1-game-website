@@ -5,7 +5,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 .nav-outline {
-  background-color: #161d26;
+  background-color: #161d26f5;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -91,7 +91,7 @@
   color: rgb(207, 207, 207);
 }
 .btn {
-  background: linear-gradient(to right, transparent, #f92b73 ) ;
+  background: linear-gradient(to right, transparent, #cc1200 ) ;
   padding: 15px 25px;
   border: 0;
   color: white;
@@ -99,6 +99,7 @@
   margin-top: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  border-top-right-radius: 10px;
 }
 .btn:hover {
   transform: scale(1.2);
@@ -157,6 +158,7 @@
   color: gray;
   font-weight: 400; 
   padding: 4px 10px;
+  height: 13%;
 }
 .thumbnail-outline h3 {
   margin: 6px 0px;
@@ -177,13 +179,13 @@
 }
 .new-session-image {
   width: 50%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  /* border-top-left-radius: 10px; */
+  /* border-bottom-left-radius: 10px; */
 }
 .new-session-image-new-era {
   width: 50%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  /* border-top-right-radius: 10px; */
+  /* border-bottom-right-radius: 10px; */
 }
 .new-session h2 {
   font-size: 50px;
@@ -205,4 +207,12 @@
   height: 100%;
   position: absolute;
   z-index: 0;
+}
+.footer-outline {
+  width: 100%;
+  background-color: #161d26;
+  height: 350px;
+}
+.footer-img {
+  width: 300px;
 }
