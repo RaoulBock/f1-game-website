@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/f1-game-website/static/css/main.d3dcb078.css",
+    "main.js": "/f1-game-website/static/js/main.4039c25a.js",
+    "static/js/787.6be0fdf1.chunk.js": "/f1-game-website/static/js/787.6be0fdf1.chunk.js",
+    "static/media/logo.png": "/f1-game-website/static/media/logo.09dc22f6fad1854ef1ac.png",
+    "index.html": "/f1-game-website/index.html",
+    "main.d3dcb078.css.map": "/f1-game-website/static/css/main.d3dcb078.css.map",
+    "main.4039c25a.js.map": "/f1-game-website/static/js/main.4039c25a.js.map",
+    "787.6be0fdf1.chunk.js.map": "/f1-game-website/static/js/787.6be0fdf1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3dcb078.css",
+    "static/js/main.4039c25a.js"
+  ]
+}
