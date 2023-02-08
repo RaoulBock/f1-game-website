@@ -1,6 +1,7 @@
 import React from "react";
 
 import logo from "../Components/images/logo.png";
+import { Button } from "./Button/Button";
 
 export const Nav = () => {
   const JUMBOTRON_MENU = [

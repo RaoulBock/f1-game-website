@@ -14,10 +14,13 @@ export const HomeScreen = () => {
       <Jumbotron />
       {/* <Banner /> */}
       <div className="fade-out"></div>
-      <section className="world-cup-section">
-        {THUMBNAIL_DATA.map((e, i) => {
-          return <Thumbnail key={i} item={e} />;
-        })}
+      <section className="updates-in-game">
+        <h1>NEW IN F1</h1>
+        <div className="world-cup-section">
+          {THUMBNAIL_DATA.map((e, i) => {
+            return <Thumbnail key={i} item={e} />;
+          })}
+        </div>
       </section>
 
       <section className="new-session">

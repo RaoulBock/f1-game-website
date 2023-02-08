@@ -172,7 +172,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
   width: 100%;
   z-index: 1;
   position: relative;
@@ -259,4 +259,33 @@
 .footer-logo {
   width: 60px;
   height: 90px;
+}
+.updates-in-game h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 30px 0px;
+  text-align: center;
+  position: relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #22212a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }
