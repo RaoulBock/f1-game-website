@@ -67,7 +67,7 @@ export const HomeScreen = () => {
 
       <Jumbotron
         // text={"2023-01-08"}
-        title={"Get game today"}
+        title={"Play today"}
         description={
           "Elit fugiat consequat pariatur velit amet culpa consectetur dolore. Dolor consequat consectetur et adipisicing exercitation reprehenderit labore magna sunt aliqua laborum mollit."
         }
