@@ -59,6 +59,38 @@ export const THUMBNAIL_DATA = [
     name: "Max Verstappen",
     description:
       "Dolore in voluptate aliquip id ea esse. Eu incididunt ullamco do do enim sint esse cillum. Veniam ad id id esse ex eu amet cillum est proident ullamco in. Sunt enim ad nostrud id est esse."
+  },
+  {
+    id: 5,
+    image:
+      "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0827%2Fr1053673_1296x729_16%2D9.jpg",
+    name: "Lewis Hamilton",
+    description:
+      "Proident ad sunt ut id id laboris duis duis ad sint. Id commodo in ea ea. Est proident aliqua aliqua ullamco. Ea duis elit dolor sunt laborum ea elit ea."
+  },
+  {
+    id: 6,
+    image:
+      "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/1017389211-lat-20190315-_2st7019.jpg",
+    name: "Lando Norris",
+    description:
+      "Eu id id Lorem do consectetur do minim Lorem ad cillum. Consectetur sint amet aliqua eu eu eu eu ex non velit. Adipisicing magna velit id excepteur proident. Consequat excepteur et consectetur eu."
+  },
+  {
+    id: 7,
+    image:
+      "https://racer.com/wp-content/uploads/sites/85/2021/03/1018477765-LAT-20210313-TE2101_102640_N3I9719.jpg",
+    name: "Carlos Sainz",
+    description:
+      "Sint mollit consectetur eu esse cupidatat sint incididunt enim enim ullamco aute. Incididunt non sunt ad non ea ea eu eu velit velit. Veniam velit minim id est et enim enim. Elit voluptate do commodo amet."
+  },
+  {
+    id: 8,
+    image:
+      "https://cdn-1.motorsport.com/static/img/amp/4900000/4980000/4989000/4989400/4989444/s6_1000544/1000544.jpg",
+    name: "Daniel Ricciardo",
+    description:
+      "Esse id consectetur excepteur ut cillum aliquip sint in Lorem duis. Incididunt aute consectetur veniam enim minim incididunt esse. Nostrud deserunt incididunt ullamco magna. Ad et id minim id enim."
   }
 ];
 

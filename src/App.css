@@ -113,8 +113,11 @@
 .banner-image {
   width: 200px;
   padding-left: 20px;
-  animation: slide-in-out-banner 10s linear infinite;
+  animation: slide-in-out-banner 10s linear alternate;
 }
+
+
+
 @keyframes slide-in-out-banner {
   0% {
     transform: translateX(-100%);overflow: hidden;
@@ -123,21 +126,25 @@
     transform: translateX(100%);overflow: hidden;
   }
   100% {
-    transform: translateX(-100%);overflow: hidden;
+    transform: translateX(100%);overflow: hidden;
   }
 }
 .world-cup-section {
   display: flex;
   /* margin: 8px 0px; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   z-index: 1;
   justify-content: flex-start;
   position: relative;
+  overflow-x: scroll;
+}
+.world-cup-section::-webkit-scrollbar {
+  display: none;
 }
 .thumbnail-image {
   width: 100%;
   border-radius: 10px;
-
+  height: 300px;
 }
 .thumbnail-outline {
   transition: all 0.2s ease-in-out;
@@ -146,6 +153,7 @@
   margin: 5px 10px;
   width: 420px;
   border-radius: 10px;
+  height: 500px;
 }
 .thumbnail-outline:hover {
   transform: scale(1.01);

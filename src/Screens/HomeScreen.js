@@ -8,6 +8,12 @@ import { Thumbnail } from "../Components/Thumbnail";
 import { GAMES_DATA, THUMBNAIL_DATA } from "../Context/settings";
 
 export const HomeScreen = () => {
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
+  function handleClick(index) {
+    setCurrentIndex(index);
+  }
+
   return (
     <div>
       <Nav />
@@ -15,10 +21,20 @@ export const HomeScreen = () => {
       {/* <Banner /> */}
       <div className="fade-out"></div>
       <section className="updates-in-game">
-        <h1>NEW IN F1</h1>
+        <h1>NEW IN F1 </h1>
         <div className="world-cup-section">
           {THUMBNAIL_DATA.map((e, i) => {
-            return <Thumbnail key={i} item={e} />;
+            return (
+              <div
+                className={`thumbnail-item ${
+                  i === currentIndex ? "active" : ""
+                }`}
+                key={i}
+                onClick={() => handleClick(i)}
+              >
+                <Thumbnail key={i} item={e} />
+              </div>
+            );
           })}
         </div>
       </section>
@@ -36,7 +52,7 @@ export const HomeScreen = () => {
           <h4>Prepare to take your seat</h4>
         </div>
       </section>
-      <div className="fade-out-top"></div>
+      {/* <div className="fade-out-top"></div> */}
       <section className="new-session">
         <div className="new-session-information">
           <h2>New Season, New Rules.</h2>
