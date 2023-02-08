@@ -22,7 +22,7 @@ export const HomeScreen = () => {
         text={
           "FIFA 23 Ultimate Team™ welcomes the future of The World’s Game—this"
         }
-        title={"F1 23 Ultimate Racing"}
+        title={"F1 23 Ultimate Racing."}
         description={
           "Excepteur qui eiusmod quis ex consectetur exercitation irure. Sint deserunt eu qui anim Lorem minim nostrud. Amet cillum anim adipisicing culpa labore velit officia consequat. Laboris pariatur in velit veniam consequat laborum eiusmod nulla officia excepteur."
         }
@@ -67,7 +67,7 @@ export const HomeScreen = () => {
 
       <Jumbotron
         // text={"2023-01-08"}
-        title={"Play today"}
+        title={"Play today."}
         description={
           "Elit fugiat consequat pariatur velit amet culpa consectetur dolore. Dolor consequat consectetur et adipisicing exercitation reprehenderit labore magna sunt aliqua laborum mollit."
         }
