@@ -33,7 +33,7 @@ export const HomeScreen = () => {
           <h4>Prepare to take your seat</h4>
         </div>
       </section>
-
+      <div className="fade-out-top"></div>
       <section className="new-session">
         <div className="new-session-information">
           <h2>New Season, New Rules.</h2>
